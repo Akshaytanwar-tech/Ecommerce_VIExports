@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Product Image Section */
+.product-image {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details Section */
+.product-details {
+    flex: 1.5;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff6f61;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Product Rating Section */
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-rating i {
+    color: #ffcc00;
+    margin-right: 5px;
+}
+
+/* Size Options */
+.size-options {
+    margin-bottom: 20px;
+}
+
+.size-options label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.size-options select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.button-group button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #ffcc00;
+}
+
+.buy-now {
+    background-color: #333;
+    color: #fff;
+}
+
+.buy-now:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

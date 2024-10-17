@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product1",
+    "product_name": "Wireless Headphones",
+    "product_description": "High-quality wireless headphones with noise cancellation.",
+    "product_price": 99.99,
+    "product_rating": 4.5,
+    "size_options": {
+      "Small": {
+        "available_quantity": 50
+      },
+      "Medium": {
+        "available_quantity": 30
+      },
+      "Large": {
+        "available_quantity": 20
+      }
+    }
+  },
+  {
+    "id": 2,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product2",
+    "product_name": "Smart Watch",
+    "product_description": "A smartwatch with fitness tracking and GPS.",
+    "product_price": 199.99,
+    "product_rating": 4.7,
+    "size_options": {
+      "Small": {
+        "available_quantity": 40
+      },
+      "Medium": {
+        "available_quantity": 25
+      },
+      "Large": {
+        "available_quantity": 15
+      }
+    }
+  },
+  {
+    "id": 3,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product3",
+    "product_name": "Running Shoes",
+    "product_description": "Comfortable and durable running shoes for all terrains.",
+    "product_price": 59.99,
+    "product_rating": 4.3,
+    "size_options": {
+      "Small": {
+        "available_quantity": 50
+      },
+      "Medium": {
+        "available_quantity": 30
+      },
+      "Large": {
+        "available_quantity": 20
+      }
+    }
+  },
+  {
+    "id": 4,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product4",
+    "product_name": "Bluetooth Speaker",
+    "product_description": "Portable Bluetooth speaker with high-quality sound.",
+    "product_price": 49.99,
+    "product_rating": 4.6,
+    "size_options": {
+      "Small": {
+        "available_quantity": 60
+      },
+      "Medium": {
+        "available_quantity": 40
+      },
+      "Large": {
+        "available_quantity": 20
+      }
+    }
+  },
+  {
+    "id": 5,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product5",
+    "product_name": "Gaming Mouse",
+    "product_description": "Ergonomic gaming mouse with customizable buttons.",
+    "product_price": 29.99,
+    "product_rating": 4.4,
+    "size_options": {
+      "Small": {
+        "available_quantity": 100
+      },
+      "Medium": {
+        "available_quantity": 70
+      },
+      "Large": {
+        "available_quantity": 50
+      }
+    }
+  },
+  {
+    "id": 6,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product6",
+    "product_name": "Fitness Tracker",
+    "product_description": "Track your daily activity and monitor your heart rate.",
+    "product_price": 79.99,
+    "product_rating": 4.5,
+    "size_options": {
+      "Small": {
+        "available_quantity": 80
+      },
+      "Medium": {
+        "available_quantity": 50
+      },
+      "Large": {
+        "available_quantity": 30
+      }
+    }
+  },
+  {
+    "id": 7,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product7",
+    "product_name": "Laptop Sleeve",
+    "product_description": "Durable and stylish laptop sleeve for 13-inch laptops.",
+    "product_price": 24.99,
+    "product_rating": 4.2,
+    "size_options": {
+      "Small": {
+        "available_quantity": 90
+      },
+      "Medium": {
+        "available_quantity": 60
+      },
+      "Large": {
+        "available_quantity": 40
+      }
+    }
+  },
+  {
+    "id": 8,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product8",
+    "product_name": "Wireless Keyboard",
+    "product_description": "Compact wireless keyboard with a long battery life.",
+    "product_price": 39.99,
+    "product_rating": 4.6,
+    "size_options": {
+      "Small": {
+        "available_quantity": 70
+      },
+      "Medium": {
+        "available_quantity": 50
+      },
+      "Large": {
+        "available_quantity": 30
+      }
+    }
+  },
+  {
+    "id": 9,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product9",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_description": "True wireless earbuds with active noise cancellation.",
+    "product_price": 129.99,
+    "product_rating": 4.8,
+    "size_options": {
+      "Small": {
+        "available_quantity": 100
+      },
+      "Medium": {
+        "available_quantity": 75
+      },
+      "Large": {
+        "available_quantity": 50
+      }
+    }
+  },
+  {
+    "id": 10,
+    "image_link": "https://dummyimage.com/600x400/000/fff&text=Product10",
+    "product_name": "Portable Charger",
+    "product_description": "High-capacity portable charger with fast charging.",
+    "product_price": 49.99,
+    "product_rating": 4.7,
+    "size_options": {
+      "Small": {
+        "available_quantity": 80
+      },
+      "Medium": {
+        "available_quantity": 60
+      },
+      "Large": {
+        "available_quantity": 40
+      }
+    }
+  }
+]

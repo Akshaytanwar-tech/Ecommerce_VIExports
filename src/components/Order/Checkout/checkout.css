@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.checkout-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="tel"],
+.checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.checkout-form input[type="text"]:focus,
+.checkout-form input[type="tel"]:focus,
+.checkout-form textarea:focus {
+    border-color: #ff6f61;
+}
+
+.checkout-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #ffcc00;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.payment-option {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.payment-option-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-method {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-title {
+        font-size: 24px;
+    }
+
+    .checkout-btn {
+        font-size: 14px;
+    }
+}
