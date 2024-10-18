@@ -1,3 +1,6 @@
+import constant from "../constant/constant";
+
+// api to create a order
 const createOrder = async (
   item_name,
   item_price,
@@ -5,7 +8,7 @@ const createOrder = async (
   customer_name,
   customer_address
 ) => {
-  const response = await fetch(`http://localhost:5000/api/orders`, {
+  const response = await fetch(`${constant.url}/api/orders`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -23,8 +26,10 @@ const createOrder = async (
 
   return json;
 };
+
+// api to create bulk order
 const bulkOrder = async (array, customer_name, customer_address) => {
-  const response = await fetch(`http://localhost:5000/api/orders/bulk`, {
+  const response = await fetch(`${constant.url}/api/orders/bulk`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -40,8 +45,10 @@ const bulkOrder = async (array, customer_name, customer_address) => {
 
   return json;
 };
+
+// api to fetch all the orders with respect to user.
 const fetchOrder = async () => {
-  const response = await fetch(`http://localhost:5000/api/orders`, {
+  const response = await fetch(`${constant.url}/api/orders`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -52,4 +59,5 @@ const fetchOrder = async () => {
 
   return json;
 };
+
 export { createOrder, bulkOrder, fetchOrder };

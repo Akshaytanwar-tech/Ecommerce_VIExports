@@ -1,5 +1,8 @@
+import constant from "../constant/constant";
+
+// Api for signup 
 const signup = async (username, password) => {
-  const response = await fetch(`http://localhost:5000/api/auth/signup`, {
+  const response = await fetch(`${constant.url}/api/auth/signup`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -10,11 +13,12 @@ const signup = async (username, password) => {
     }),
   });
   const json = await response.json();
-  console.log(json);
   return json;
 };
+
+// api for signin
 const signin = async (username, password) => {
-  const response = await fetch(`http://localhost:5000/api/auth/signin`, {
+  const response = await fetch(`${constant.url}/api/auth/signin`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +29,6 @@ const signin = async (username, password) => {
     }),
   });
   const json = await response.json();
-  console.log(json);
   return json;
 };
 

@@ -38,6 +38,13 @@ const Navbar = () => {
               </Link>
             </li>
             {!localStorage.getItem("token") ? (
+              ""
+            ) : (
+              <li>
+                <Link to="/myorders">My Orders</Link>
+              </li>
+            )}
+            {!localStorage.getItem("token") ? (
               <li class="profile">
                 <button
                   style={{

@@ -7,6 +7,9 @@ const Cart = () => {
   const [cart, setcart] = useState([]);
   let total_price = 0;
   useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      navigate("/login");
+    }
     fetchitem().then((res) => {
       setcart(res);
     });
