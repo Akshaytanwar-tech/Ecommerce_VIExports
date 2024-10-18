@@ -1,10 +1,10 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const db = require("../config/db");
-const JWT_SECRET = "akshay123";
+const db = require("../../config/db");
 
 const signin = (req, res) => {
   const { username, password } = req.body;
+
 
   // Check if the user exists
   const query = "SELECT * FROM users WHERE username = ?";
@@ -26,7 +26,7 @@ const signin = (req, res) => {
       }
 
       // Generate a JWT token
-      const token = jwt.sign({ userId: user.id }, JWT_SECRET);
+      const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET);
 
       res.json({ token, message: "Login successful" });
     });

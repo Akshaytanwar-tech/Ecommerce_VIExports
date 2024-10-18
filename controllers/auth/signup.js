@@ -1,9 +1,7 @@
 const bcrypt = require("bcryptjs");
-const db = require("../config/db");
+const db = require("../../config/db");
 const jwt = require('jsonwebtoken');
 
-// Replace 'your_jwt_secret_key' with a strong secret key
-const JWT_SECRET = 'akshay123';
 
 const signup = (req, res) => {
   const { username, password } = req.body;
@@ -26,7 +24,7 @@ const signup = (req, res) => {
         return res.status(500).json({ error: "Database error" });
       }
       // After successful signup, create a JWT token
-      const token = jwt.sign({ userId: result.insertId }, JWT_SECRET);
+      const token = jwt.sign({ userId: result.insertId }, process.env.JWT_SECRET);
 
       res.status(201).json({
         message: "User registered successfully!",

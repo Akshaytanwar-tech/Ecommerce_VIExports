@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const JWT_SECRET = "akshay123";
 const db = require('../../config/db')
 const createorder = (req, res) => {
   const { item_name, item_price, quantity, customer_name, customer_address } =
@@ -8,7 +7,7 @@ const createorder = (req, res) => {
 
   // Verify JWT token
   if (!token) return res.status(403).send({ message: "No token provided" });
-  jwt.verify(token, JWT_SECRET, (err, decoded) => {
+  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
     if (err)
       return res.status(500).send({ message: "Failed to authenticate token" });
 

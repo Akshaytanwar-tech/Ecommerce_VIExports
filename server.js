@@ -3,7 +3,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const authRoutes = require("./routes/auth");
 const cartRoutes = require("./routes/cart");
-const orderRoutes = require("./routes/order")
+const orderRoutes = require("./routes/order");
+require("dotenv").config();
 
 // Create Express app
 const app = express();
